@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #0C1133"
+    tools:context=".ui.fragments.ShareFragment">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginVertical="15dp"
+        android:src="@drawable/acclogo"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+
+        android:hint="Use phone / email / username"
+        android:background="@drawable/button_background"/>
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginVertical="15dp"
+        android:src="@drawable/fblogo"/>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/btn2"
+        android:hint="Continue with Facebook"
+        android:background="@drawable/button_background"/>
+
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginVertical="15dp"
+        android:src="@drawable/twitterlogo"/>
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/btn3"
+        android:hint="Continue with Twitter"
+        android:background="@drawable/button_background"
+        />
+    <ImageView
+        android:id="@+id/img6"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginVertical="15dp"
+        android:src="@drawable/iglogo"/>
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/btn5"
+        android:hint="Continue with Instagram"
+        android:background="@drawable/button_background"/>
+
+
+
+
+
+
+</RelativeLayout>

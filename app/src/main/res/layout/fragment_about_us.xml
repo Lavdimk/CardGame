@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C1133"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.AboutUsFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdHorizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdHorizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdHorizontal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="About us"
+        app:layout_constraintStart_toEndOf="@id/gdVertical"
+        app:layout_constraintBottom_toTopOf="@id/gdHorizontal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_margin="5dp"
+        android:text="Mirë se vini në Card Game, loja klasike me letra tani e disponueshme në pajisjen tuaj celular! Aplikacioni ynë ofron një ndërfaqe të hijshme dhe miqësore për përdoruesit, duke e bërë të lehtë për ju që të luani lojën tuaj të preferuar në çdo kohë, kudo."
+        app:layout_constraintTop_toBottomOf="@id/gdHorizontal"
+        app:layout_constraintBottom_toTopOf="@id/gdHorizontal2"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gdHorizontal2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Solitaire është zhvilluar nga GameCo, një kompani e dedikuar për krijimin e lojërave celulare me cilësi të lartë. Misioni ynë është të ofrojmë përvoja argëtuese dhe tërheqëse për të gjithë lojtarët."
+        android:textSize="17dp"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gdHorizontal3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="5dp"
+        android:textSize="17dp"
+        android:text="Nëse keni ndonjë pyetje ose koment, ju lutemi na kontaktoni në support@gameco.com.Ekipi ynë i mbështetjes së klientit është gjithmonë i gatshëm t'ju ndihmojë."/>
+
+    <ImageView
+        android:id="@+id/ivimg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toEndOf="@id/gdVertical"
+        app:layout_constraintTop_toBottomOf="@id/gdHorizontal4"
+        android:src="@drawable/about"
+       />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toEndOf="@id/ivimg"
+        app:layout_constraintTop_toBottomOf="@id/gdHorizontal4"
+        android:src="@drawable/rsvpng"
+        android:layout_marginHorizontal="8dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

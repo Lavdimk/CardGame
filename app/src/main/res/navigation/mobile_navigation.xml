@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ict.cardgame.ui.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_playersFragment"
+            app:destination="@id/playersFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.ict.cardgame.ui.fragments.PlayFragment"
+        android:label="fragment_play"
+
+        tools:layout="@layout/fragment_play" >
+        <argument
+            android:name="playerone"
+            app:argType="string"
+            app:nullable="true" />
+        <argument android:name="playerTwo"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.ict.cardgame.ui.fragments.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_usersFragment_to_savedPlayer"
+            app:destination="@id/savedPlayer"
+            app:enterAnim="@anim/slide_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedPlayer"
+        android:name="com.ict.cardgame.ui.fragments.SavedPlayer"
+        android:label="fragment_saved_player"
+        tools:layout="@layout/fragment_saved_player" />
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.ict.cardgame.ui.fragments.PlayersFragment"
+        android:label="fragment_players"
+        tools:layout="@layout/fragment_players" >
+        <action
+            android:id="@+id/action_playersFragment_to_playFragment"
+            app:destination="@id/playFragment"
+            app:enterAnim="@anim/slide_in" />
+        <action
+            android:id="@+id/action_playersFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.ict.cardgame.ui.fragments.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="com.ict.cardgame.ui.fragments.ShareFragment"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
+
+</navigation>
